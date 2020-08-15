@@ -1,0 +1,45 @@
+@import '../../../styles/main';
+
+.PurchaseItemsContainer {
+  composes: w-60;
+  background-color: white;
+  height: auto;
+  padding: 2em;
+}
+
+.PurchaseItems {
+  text-align: center;
+}
+
+.availablePlanStyle {
+  text-align: center;
+  color: $primary-color;
+  width: 25%;
+  font-size: 0.9em;
+  padding: 20px 30px;
+  background-color: $primary-background-color;
+  height: 14em;
+  border: 1px solid rgb(230, 228, 228);
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary-background-color, 20%);
+  }
+
+  &:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  &::last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.activePlanStyle {
+  composes: availablePlanStyle;
+  color: white;
+  background-color: $primary-color;
+}

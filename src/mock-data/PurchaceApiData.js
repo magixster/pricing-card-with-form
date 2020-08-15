@@ -1,14 +1,4 @@
 export const PURCHASE_API_DATA = {
-  "Average home price point": [
-     {
-        "Plan name": "Plan name",
-        "Qualified Leads Per Month": "Qualified Leads Per Month",
-        "Price per live transfer": "Price per live transfer",
-        "Total qualified lead price": "Total qualified lead price",
-        "Total platform price": "Total platform price",
-        "Final package price": "Final package price"
-     }
-  ],
   "$100K-$200K": [
      {
         "Plan name": "Qualified 20",
@@ -21,6 +11,7 @@ export const PURCHASE_API_DATA = {
      {
         "Plan name": "Qualified 40",
         "Qualified Leads Per Month": "40",
+        most_popular: true,
         "Price per live transfer": "$67",
         "Total qualified lead price": "$2,680",
         "Total platform price": "$599",
@@ -58,7 +49,8 @@ export const PURCHASE_API_DATA = {
         "Price per live transfer": "$77",
         "Total qualified lead price": "$3,080",
         "Total platform price": "$599",
-        "Final package price": "$3,679"
+        "Final package price": "$3,679",
+        most_popular: true,
      },
      {
         "Plan name": "Qualified 60",
@@ -92,7 +84,8 @@ export const PURCHASE_API_DATA = {
         "Price per live transfer": "$96",
         "Total qualified lead price": "$3,840",
         "Total platform price": "$599",
-        "Final package price": "$4,439"
+        "Final package price": "$4,439",
+        most_popular: true,
      },
      {
         "Plan name": "Qualified 60",
@@ -126,7 +119,8 @@ export const PURCHASE_API_DATA = {
         "Price per live transfer": "$106",
         "Total qualified lead price": "$4,240",
         "Total platform price": "$599",
-        "Final package price": "$4,839"
+        "Final package price": "$4,839",
+        most_popular: true,
      },
      {
         "Plan name": "Qualified 60",
@@ -160,7 +154,8 @@ export const PURCHASE_API_DATA = {
         "Price per live transfer": "$125",
         "Total qualified lead price": "$5,000",
         "Total platform price": "$599",
-        "Final package price": "$5,599"
+        "Final package price": "$5,599",
+        most_popular: true,
      },
      {
         "Plan name": "Qualified 60",

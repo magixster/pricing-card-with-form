@@ -1,6 +1,72 @@
 @import '../../styles/main';
 
-.purchasePageStyle {
-  composes: w-60;
-  background-color: white;
-}
+.myModal {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40em;
+    height: 30em;
+    box-shadow: 0 5px 10px 2px rgba(195,192,192,.5);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .modalClose {
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+  }
+
+  .form {
+    &__header {
+      border-bottom: 1px solid $primary-color;
+      color: $primary-color;
+      font-weight: 600;
+      padding-bottom: 15px;
+    }
+
+    &__container {
+      text-align: left;
+      padding-top: 1em;
+    }
+
+    &__selected {
+      font-weight: bold;
+      color: $primary-color
+    }
+    &__selectedPlan {
+      color: $primary-color;
+      font-weight: 400;
+    }
+  }
+
+  .userInputItem {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    text-align: left;
+  }
+
+  input {
+    height: 1.5em;
+  }
+
+  label {
+    color: $primary-color
+  }
+
+  .submitBtn {
+    line-height: 2em;
+    color: white;
+    background-color: $secondary-color;
+    font-weight: 600;
+    outline: none;
+    border: none;
+  }

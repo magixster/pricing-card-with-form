@@ -1,0 +1,97 @@
+@import '../../../styles/main';
+
+.card {
+  width: 25%;
+  margin-right: 1.2em;
+
+  &__totalPerMonth {
+    color: $primary-color;
+    font-size: large;
+    width: 100%;
+  }
+
+  .mostPopularDummyArea {
+    height: 2.2em;
+  }
+
+  &__mostPopular {
+    background-color: $secondary-color;
+    color: white;
+    line-height: 2.5em;
+    text-align: center;
+    font-size: small;
+    font-weight: bolder;
+  }
+
+  &:nth-child(even) {
+    background-color: lighten($primary-color, 50%);
+  }
+
+  &__finalPrice {
+    background-color: $primary-color;
+    text-align: center;
+    color: white;
+    line-height: 2em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+  }
+
+  &__startTrialBtn {
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    height: 3em;
+    font-weight: 600;
+    background: white;
+  }
+  &__quantified {
+    text-align: center;
+    color: white;
+    background-color: $primary-color;
+    width: 100%;
+    line-height: 2.5em;
+  }
+
+  &__perlead {
+    padding: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px dotted $primary-color;
+    composes: d-flex-column;
+
+    &_price {
+      font-weight: 500;
+      font-size: 1.8em;
+      padding-bottom: 0.5em;
+      color: darken($primary-color, 10%);
+    }
+
+    &_label {
+      color: $primary-color;
+      font-weight: 600;
+      font-size: small;
+    }
+  }
+
+  &__leads {
+    padding: 1em;
+    composes: d-flex-column;
+    border-bottom: 1px dotted $primary-color;
+
+    &_label {
+      font-weight: 600;
+      font-size: small;
+      color: $primary-color;
+      padding-bottom: 0.5em;
+    }
+
+    &_number {
+      color: $primary-color;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
